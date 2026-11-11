@@ -63,6 +63,105 @@
                 </div>
             </div>
         </div>
+        <article>
+  <h2>Hướng dẫn học HTML5 trong 7 ngày</h2>
+  <p>Đăng ngày: 11/11/2026 bởi Giảng viên FPT</p>
+  
+  <!-- Bên trong <article> có thể chia thành các <section> nhỏ -->
+  <section>
+    <h3>Ngày 1: Các thẻ Semantic cơ bản</h3>
+    <p>Nội dung chi tiết ngày 1...</p>
+  </section>
+  
+  <section>
+    <h3>Ngày 2: Làm chủ Form 2.0</h3>
+    <p>Nội dung chi tiết ngày 2...</p>
+  </section>
+</article>
+<!-- Thẻ Video -->
+<video width="320" height="240" controls poster="thumb.jpg">
+  <source src="video.mp4" type="video/mp4" />
+  Trình duyệt của bạn không hỗ trợ thẻ video.
+</video>
+
+<!-- Thẻ Audio -->
+<audio controls autoplay muted>
+  <source src="song.mp3" type="audio/mpeg" />
+  Trình duyệt của bạn không hỗ trợ thẻ audio.
+</audio>
+<main>
+      <!-- Khối Giới Thiệu -->
+      <section id="about">
+        <h2>Giới Thiệu</h2>
+        <article>
+          <h3>Xu hướng Web Ngữ Nghĩa HTML5</h3>
+          <p>
+            Nắm vững Semantic Tag giúp website đạt chuẩn SEO và thiết kế
+            Responsive.
+          </p>
+        </article>
+      </section>
+
+      <!-- Khối Media -->
+      <section id="media">
+        <h2>Góc Đa Phương Tiện</h2>
+        <video width="300" controls poster="thumb.jpg">
+          <source src="demo.mp4" type="video/mp4" />
+          Trình duyệt không hỗ trợ xem video.
+        </video>
+        <audio controls>
+          <source src="music.mp3" type="audio/mpeg" />
+          Trình duyệt không hỗ trợ nghe audio.
+        </audio>
+      </section>
+
+      <!-- Khối Form 2.0 -->
+      <section id="register">
+        <h2>Form Đăng Ký Thành Viên</h2>
+        <form action="#" method="POST">
+          <p>
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" id="fullname" placeholder="Nguyễn Văn A" autofocus required />
+          </p>
+          <p>
+            <label for="email">Email liên hệ:</label>
+            <input type="email" id="email" placeholder="a@fpt.edu.vn" required />
+          </p>
+          <p>
+            <label for="dob">Ngày sinh:</label>
+            <input type="date" id="dob" required />
+          </p>
+          <p>
+            <label for="time">Giờ học mong muốn:</label>
+            <input type="time" id="time" />
+          </p>
+          <p>
+            <label for="exp">Số năm kinh nghiệm (1-5):</label>
+            <input type="number" id="exp" min="1" max="5" value="1" />
+          </p>
+          <p>
+            <label for="confidence">Mức độ tự tin HTML5 (1-10):</label>
+            <input type="range" id="confidence" min="1" max="10" value="8" />
+          </p>
+          <p>
+            <label for="theme">Màu giao diện thích:</label>
+            <input type="color" id="theme" value="#008080" />
+          </p>
+          <p>
+            <label for="avatar">Ảnh đại diện:</label>
+            <input type="file" id="avatar" multiple />
+          </p>
+          <button type="submit">Đăng Ký</button>
+          <button type="reset">Làm Lại</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- 4. Aside -->
+    <aside>
+      <h3>Khóa Học Nổi Bật</h3>
+      <p>CSS3, JavaScript ES6, ReactJS Front-End.</p>
+    </aside>
         <div id="footer">
             <h1>Copyright © 2024 Design by Ochna</h1>
         </div>

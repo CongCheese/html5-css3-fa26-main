@@ -1,127 +1,134 @@
-* {
-    padding: 0;
+/* Thiết lập chung */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    box-sizing: border-box;
-    font-family: Duepuntozero;
+    padding: 0;
+    background-color: white;
 }
 
-@font-face {
-    font-family: Duepuntozero;
-    src: url(./font/UTM\ Duepuntozero.ttf);
-  }
-
-#main {
-    padding: 0 100px;
-}
-
-#main #header .top-header {
+/* Header & Navigation */
+header {
+    background-color: pink;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #faacac;
 }
 
-#main #header .menu ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-#main #header .menu ul li {
-    list-style: none;
-}
-
-
-
-#main #header .menu ul li a {
+nav a {
     text-decoration: none;
-    color: #f9f9f9;
-    font-size: 15px;
-    padding: 10px 10px;
-    display: block;
-    border-left: 1px solid #fff;
-}
-
-#main #header .menu ul li:nth-child(1) a {
-    color: red;
-}
-
-#main #header .search input {
-    padding: 5px 10px;
-    margin: 0 10px;
-    border: none;
-    border-radius: 5px ;
-} 
-
-#main #header .search button {
-    background-color: #ccccc0;
-    border: 1px solid #fff;
-    padding: 5px 10px;
-    margin: 0 10px 0 0;
-    border-radius: 5px;
-}
-
-#main #header .logo {
-    display: flex;
-    justify-content: center;
-}
-
-
-#main #header .banner img {
-    width: 100%;
-    height: 400px;
-}
-
-#main #content h1 {
-    font-weight: 200;
-    padding: 10px;
-}
-
-#main #content .products {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0 100px 0;
-}
-
-#main #content .products .item {
-    width: 24%;
-    border: 1px solid ;
-}
-
-#main #content .products .item img {
-    width: 100%;
-    
-}
-
-#main #content .products .item h2 {
-    text-align: center;
-    font-size: 15px;
-}
-
-#main #content .products .item p {
-    text-align: center;
-    font-size: 15px;
-    padding: 10px 0;
+    color: pink;
+    margin-right: 15px;
     font-weight: bold;
-    color: #970505;
 }
 
-#main #content .products .item p del {
-    color : #000;
-    font-size: 12px;
+.search-box {
+    display: flex;
+    gap: 5px;
 }
 
-#main #footer {
-    background-color: #faacac;
+.search-box input {
+    padding: 5px;
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
 }
 
-#main #footer h1 {
-    font-size: 14px;
-    padding: 15px 0 ;
+.search-box button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Logo thương hiệu */
+.logo-container {
     text-align: center;
-    font-weight:normal;
+    margin: 20px 0;
 }
 
+.logo-badge {
+    display: inline-block;
+    background-color: lightblue;
+    color: purple;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
 
+/* Banner quảng cáo */
+.banner {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+.banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
+/* Nội dung chính & Lưới sản phẩm */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.section-title {
+    font-size: 20px;
+    color: darkslategrey;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid smokewhite;
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px;
+    background: smokewhite;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: darkslategrey;
+    margin-bottom: 8px;
+}
+
+.price-current {
+    color: darkslategray;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.price-old {
+    text-decoration: line-through;
+    color: grey;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 15px 0;
+    color: darkslategrey;
+    font-size: 14px;
+}
